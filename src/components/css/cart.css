@@ -1,0 +1,57 @@
+.checkOutBox {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.fntszLg {
+  font-size: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .checkOutBox {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .active {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .price {
+    font-size: 15px !important;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+  .card h5 {
+    font-size: 15px;
+  }
+
+  .checkOutBox {
+    font-size: 12px;
+    z-index: 2;
+  }
+
+  .checkOutBox {
+    width: 35%;
+  }
+}

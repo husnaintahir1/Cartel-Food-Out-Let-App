@@ -1,0 +1,32 @@
+/* scrollbar.css */
+.fntszLg {
+  font-size: 15px;
+}
+div.scrollmenu {
+  position: fixed;
+  width: 75%;
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  font-weight: bold;
+  border-bottom: 3px solid #b51158;
+}
+
+@media only screen and (max-width: 600px) {
+  div.scrollmenu {
+    width: 100%;
+  }
+}

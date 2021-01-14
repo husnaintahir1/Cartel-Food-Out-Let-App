@@ -1,0 +1,25 @@
+.formContainer {
+  width: 75%;
+}
+
+.formContainer form {
+  width: 60%;
+  margin: auto;
+  font-size: 20px;
+}
+
+#formBody {
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .formContainer {
+    width: 95%;
+    margin: auto;
+  }
+  .formContainer form {
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+  }
+}
